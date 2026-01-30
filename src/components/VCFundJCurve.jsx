@@ -321,8 +321,8 @@ const VCFundJCurve = () => {
   return (
     <div className="page-wrapper" style={{
       minHeight: '100vh',
-      background: 'linear-gradient(145deg, #0d1117 0%, #161b22 50%, #0d1117 100%)',
-      color: '#e6edf3',
+      background: 'linear-gradient(145deg, #f8fafc 0%, #ffffff 50%, #f8fafc 100%)',
+      color: '#1e293b',
       fontFamily: "'IBM Plex Sans', -apple-system, sans-serif"
     }}>
       <style>{`
@@ -337,7 +337,7 @@ const VCFundJCurve = () => {
           padding: 14px 22px;
           border: 1px solid rgba(139, 148, 158, 0.2);
           background: rgba(22, 27, 34, 0.8);
-          color: #8b949e;
+          color: #64748b;
           font-size: 13px;
           font-weight: 500;
           cursor: pointer;
@@ -347,12 +347,12 @@ const VCFundJCurve = () => {
         .preset-btn:hover {
           background: rgba(48, 54, 61, 0.8);
           border-color: rgba(139, 148, 158, 0.4);
-          color: #e6edf3;
+          color: #1e293b;
         }
         .preset-btn.active {
           background: linear-gradient(135deg, rgba(136, 192, 208, 0.12), rgba(163, 190, 140, 0.12));
           border-color: rgba(136, 192, 208, 0.5);
-          color: #88c0d0;
+          color: #0d9488;
           box-shadow: 0 0 24px rgba(136, 192, 208, 0.12);
         }
 
@@ -362,11 +362,11 @@ const VCFundJCurve = () => {
           justify-content: space-between;
           margin-bottom: 8px;
           font-size: 12px;
-          color: #8b949e;
+          color: #64748b;
         }
         .slider-value {
           font-family: 'IBM Plex Mono', monospace;
-          color: #88c0d0;
+          color: #0d9488;
           font-weight: 500;
         }
         input[type="range"] {
@@ -381,7 +381,7 @@ const VCFundJCurve = () => {
           -webkit-appearance: none;
           width: 16px;
           height: 16px;
-          background: linear-gradient(135deg, #88c0d0, #a3be8c);
+          background: linear-gradient(135deg, #0d9488, #16a34a);
           border-radius: 50%;
           cursor: pointer;
           box-shadow: 0 2px 8px rgba(136, 192, 208, 0.4);
@@ -402,12 +402,12 @@ const VCFundJCurve = () => {
           font-family: 'IBM Plex Mono', monospace;
           font-size: 26px;
           font-weight: 500;
-          color: #88c0d0;
+          color: #0d9488;
           margin-bottom: 4px;
         }
         .metric-label {
           font-size: 11px;
-          color: #6e7681;
+          color: #94a3b8;
           text-transform: uppercase;
           letter-spacing: 0.6px;
         }
@@ -416,7 +416,7 @@ const VCFundJCurve = () => {
           padding: 10px 16px;
           border: 1px solid rgba(139, 148, 158, 0.2);
           background: transparent;
-          color: #8b949e;
+          color: #64748b;
           font-size: 12px;
           cursor: pointer;
           transition: all 0.25s;
@@ -426,14 +426,14 @@ const VCFundJCurve = () => {
         .toggle-btn.active {
           background: rgba(191, 97, 106, 0.15);
           border-color: rgba(191, 97, 106, 0.5);
-          color: #bf616a;
+          color: #dc2626;
         }
 
         .comparison-select {
           padding: 10px 14px;
           background: rgba(22, 27, 34, 0.8);
           border: 1px solid rgba(139, 148, 158, 0.2);
-          color: #e6edf3;
+          color: #1e293b;
           font-size: 12px;
           border-radius: 6px;
           cursor: pointer;
@@ -444,7 +444,7 @@ const VCFundJCurve = () => {
           font-size: 11px;
           text-transform: uppercase;
           letter-spacing: 1.2px;
-          color: #6e7681;
+          color: #94a3b8;
           margin-bottom: 16px;
           font-weight: 500;
         }
@@ -455,12 +455,12 @@ const VCFundJCurve = () => {
           gap: 12px;
           margin-bottom: 12px;
         }
-        .allocation-label { width: 70px; font-size: 12px; color: #8b949e; }
+        .allocation-label { width: 70px; font-size: 12px; color: #64748b; }
         .allocation-value {
           width: 40px;
           font-family: 'IBM Plex Mono', monospace;
           font-size: 12px;
-          color: #a3be8c;
+          color: #16a34a;
           text-align: right;
         }
 
@@ -518,7 +518,7 @@ const VCFundJCurve = () => {
             fontSize: '11px',
             textTransform: 'uppercase',
             letterSpacing: '2px',
-            color: '#6e7681',
+            color: '#94a3b8',
             marginBottom: '12px'
           }}>
             Venture Capital Fund Modelling
@@ -526,7 +526,7 @@ const VCFundJCurve = () => {
           <h1 className="page-title" style={{
             fontWeight: 300,
             marginBottom: '14px',
-            background: 'linear-gradient(135deg, #e6edf3 0%, #88c0d0 60%, #a3be8c 100%)',
+            background: 'linear-gradient(135deg, #1e293b 0%, #0d9488 60%, #16a34a 100%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             letterSpacing: '-0.5px'
@@ -534,7 +534,7 @@ const VCFundJCurve = () => {
             The GP's J-Curve
           </h1>
           <p style={{
-            color: '#6e7681',
+            color: '#94a3b8',
             fontSize: '15px',
             maxWidth: '680px',
             lineHeight: 1.65
@@ -565,10 +565,10 @@ const VCFundJCurve = () => {
           padding: '18px 22px',
           marginBottom: '36px',
           fontSize: '13px',
-          color: '#8b949e',
+          color: '#64748b',
           lineHeight: 1.65
         }}>
-          <span style={{ color: '#88c0d0', fontWeight: 500 }}>
+          <span style={{ color: '#0d9488', fontWeight: 500 }}>
             {presets[selectedPreset]?.name || 'Custom Strategy'}:
           </span>{' '}
           {presets[selectedPreset]?.description || 'Adjust parameters to explore different fund strategies.'}
@@ -698,11 +698,11 @@ const VCFundJCurve = () => {
                 <div className="metric-label">Peak Capital Call</div>
               </div>
               <div className="metric-card">
-                <div className="metric-value" style={{ color: '#bf616a' }}>Y{metrics.breakEvenYear}</div>
+                <div className="metric-value" style={{ color: '#dc2626' }}>Y{metrics.breakEvenYear}</div>
                 <div className="metric-label">Break-Even</div>
               </div>
               <div className="metric-card">
-                <div className="metric-value" style={{ color: '#a3be8c' }}>{metrics.tvpi.toFixed(2)}x</div>
+                <div className="metric-value" style={{ color: '#16a34a' }}>{metrics.tvpi.toFixed(2)}x</div>
                 <div className="metric-label">Expected TVPI</div>
               </div>
               <div className="metric-card">
@@ -765,18 +765,18 @@ const VCFundJCurve = () => {
                 {/* Gradients */}
                 <defs>
                   <linearGradient id="vcCurveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#88c0d0" stopOpacity="0.25" />
-                    <stop offset="100%" stopColor="#88c0d0" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#0d9488" stopOpacity="0.25" />
+                    <stop offset="100%" stopColor="#0d9488" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient id="vcComparisonGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#bf616a" stopOpacity="0.2" />
-                    <stop offset="100%" stopColor="#bf616a" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#dc2626" stopOpacity="0.2" />
+                    <stop offset="100%" stopColor="#dc2626" stopOpacity="0" />
                   </linearGradient>
                   <linearGradient id="vcLineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#bf616a" />
+                    <stop offset="0%" stopColor="#dc2626" />
                     <stop offset="40%" stopColor="#d08770" />
-                    <stop offset="70%" stopColor="#88c0d0" />
-                    <stop offset="100%" stopColor="#a3be8c" />
+                    <stop offset="70%" stopColor="#0d9488" />
+                    <stop offset="100%" stopColor="#16a34a" />
                   </linearGradient>
                 </defs>
 
@@ -784,7 +784,7 @@ const VCFundJCurve = () => {
                 {showComparison && comparisonData && (
                   <>
                     <path d={generateAreaPath(comparisonData.cumulativeFlows)} fill="url(#vcComparisonGradient)" />
-                    <path d={generatePath(comparisonData.cumulativeFlows)} fill="none" stroke="#bf616a" strokeWidth="2" opacity="0.6" strokeDasharray="8,5" />
+                    <path d={generatePath(comparisonData.cumulativeFlows)} fill="none" stroke="#dc2626" strokeWidth="2" opacity="0.6" strokeDasharray="8,5" />
                   </>
                 )}
 
@@ -801,8 +801,8 @@ const VCFundJCurve = () => {
                     .reduce((min, p) => p.cash < min.cash ? p : min, fundData.cumulativeFlows[0]);
                   return (
                     <>
-                      <circle cx={scaleX(minPoint.month)} cy={scaleY(minPoint.cash)} r="5" fill="#bf616a" stroke="#0d1117" strokeWidth="2" />
-                      <text x={scaleX(minPoint.month)} y={scaleY(minPoint.cash) + 20} fill="#bf616a" fontSize="10" fontFamily="IBM Plex Mono" textAnchor="middle">
+                      <circle cx={scaleX(minPoint.month)} cy={scaleY(minPoint.cash)} r="5" fill="#dc2626" stroke="#f8fafc" strokeWidth="2" />
+                      <text x={scaleX(minPoint.month)} y={scaleY(minPoint.cash) + 20} fill="#dc2626" fontSize="10" fontFamily="IBM Plex Mono" textAnchor="middle">
                         Trough: -£{(Math.abs(minPoint.cash) / 1000).toFixed(1)}m @ Y{(minPoint.month / 12).toFixed(1)}
                       </text>
                     </>
@@ -811,7 +811,7 @@ const VCFundJCurve = () => {
 
                 {/* X-axis labels */}
                 {[0, 3, 5, 7, 10, 13].map(year => (
-                  <text key={year} x={scaleX(year * 12)} y={height - padding.bottom + 22} fill="#6e7681" fontSize="11" fontFamily="IBM Plex Mono" textAnchor="middle">
+                  <text key={year} x={scaleX(year * 12)} y={height - padding.bottom + 22} fill="#94a3b8" fontSize="11" fontFamily="IBM Plex Mono" textAnchor="middle">
                     {year === 0 ? 'Fund Start' : `Y${year}`}
                   </text>
                 ))}
@@ -825,17 +825,17 @@ const VCFundJCurve = () => {
                     yTicks.push(val);
                   }
                   return yTicks.map((val, i) => (
-                    <text key={i} x={padding.left - 14} y={scaleY(val) + 4} fill="#6e7681" fontSize="10" fontFamily="IBM Plex Mono" textAnchor="end">
+                    <text key={i} x={padding.left - 14} y={scaleY(val) + 4} fill="#94a3b8" fontSize="10" fontFamily="IBM Plex Mono" textAnchor="end">
                       {val >= 0 ? '' : '-'}£{Math.abs(val / 1000).toFixed(0)}m
                     </text>
                   ));
                 })()}
 
                 {/* Axis labels */}
-                <text x={width / 2} y={height - 12} fill="#6e7681" fontSize="11" fontFamily="IBM Plex Sans" textAnchor="middle">
+                <text x={width / 2} y={height - 12} fill="#94a3b8" fontSize="11" fontFamily="IBM Plex Sans" textAnchor="middle">
                   Fund Life (Years)
                 </text>
-                <text x={-height / 2 + 20} y={22} fill="#6e7681" fontSize="11" fontFamily="IBM Plex Sans" textAnchor="middle" transform="rotate(-90)">
+                <text x={-height / 2 + 20} y={22} fill="#94a3b8" fontSize="11" fontFamily="IBM Plex Sans" textAnchor="middle" transform="rotate(-90)">
                   Cumulative Net Cash Flow to LPs
                 </text>
 
@@ -844,9 +844,9 @@ const VCFundJCurve = () => {
                   <g transform={`translate(${width - padding.right - 150}, ${padding.top + 10})`}>
                     <rect x="-12" y="-10" width="160" height="54" fill="rgba(13, 17, 23, 0.8)" rx="6" />
                     <line x1="0" y1="8" x2="28" y2="8" stroke="url(#vcLineGradient)" strokeWidth="2" />
-                    <text x="38" y="12" fill="#8b949e" fontSize="10">{presets[selectedPreset]?.name || 'Current'}</text>
-                    <line x1="0" y1="30" x2="28" y2="30" stroke="#bf616a" strokeWidth="2" strokeDasharray="8,5" />
-                    <text x="38" y="34" fill="#8b949e" fontSize="10">{presets[comparisonPreset]?.name}</text>
+                    <text x="38" y="12" fill="#64748b" fontSize="10">{presets[selectedPreset]?.name || 'Current'}</text>
+                    <line x1="0" y1="30" x2="28" y2="30" stroke="#dc2626" strokeWidth="2" strokeDasharray="8,5" />
+                    <text x="38" y="34" fill="#64748b" fontSize="10">{presets[comparisonPreset]?.name}</text>
                   </g>
                 )}
               </svg>
@@ -859,7 +859,7 @@ const VCFundJCurve = () => {
               padding: '24px',
               border: '1px solid rgba(139, 148, 158, 0.08)'
             }}>
-              <h4 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: '#6e7681', marginBottom: '20px', fontWeight: 500 }}>
+              <h4 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: '#94a3b8', marginBottom: '20px', fontWeight: 500 }}>
                 Annual Cash Flows
               </h4>
               <div style={{ display: 'flex', alignItems: 'flex-end', gap: '8px', height: '120px' }}>
@@ -872,31 +872,31 @@ const VCFundJCurve = () => {
                         <div style={{
                           width: '14px',
                           height: `${callHeight}%`,
-                          background: 'linear-gradient(180deg, #bf616a, #a54a52)',
+                          background: 'linear-gradient(180deg, #dc2626, #b91c1c)',
                           borderRadius: '2px 2px 0 0',
                           minHeight: y.calls > 0 ? '4px' : '0'
                         }} title={`Calls: £${(y.calls / 1000).toFixed(1)}m`} />
                         <div style={{
                           width: '14px',
                           height: `${distHeight}%`,
-                          background: 'linear-gradient(180deg, #a3be8c, #8faa7a)',
+                          background: 'linear-gradient(180deg, #16a34a, #15803d)',
                           borderRadius: '2px 2px 0 0',
                           minHeight: y.distributions > 0 ? '4px' : '0'
                         }} title={`Distributions: £${(y.distributions / 1000).toFixed(1)}m`} />
                       </div>
-                      <span style={{ fontSize: '9px', color: '#6e7681', fontFamily: 'IBM Plex Mono' }}>Y{y.year}</span>
+                      <span style={{ fontSize: '9px', color: '#94a3b8', fontFamily: 'IBM Plex Mono' }}>Y{y.year}</span>
                     </div>
                   );
                 })}
               </div>
               <div style={{ display: 'flex', gap: '24px', marginTop: '16px', justifyContent: 'center' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <div style={{ width: '12px', height: '12px', background: '#bf616a', borderRadius: '2px' }} />
-                  <span style={{ fontSize: '11px', color: '#8b949e' }}>Capital Calls</span>
+                  <div style={{ width: '12px', height: '12px', background: '#dc2626', borderRadius: '2px' }} />
+                  <span style={{ fontSize: '11px', color: '#64748b' }}>Capital Calls</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <div style={{ width: '12px', height: '12px', background: '#a3be8c', borderRadius: '2px' }} />
-                  <span style={{ fontSize: '11px', color: '#8b949e' }}>Distributions</span>
+                  <div style={{ width: '12px', height: '12px', background: '#16a34a', borderRadius: '2px' }} />
+                  <span style={{ fontSize: '11px', color: '#64748b' }}>Distributions</span>
                 </div>
               </div>
             </div>
@@ -909,16 +909,16 @@ const VCFundJCurve = () => {
               borderRadius: '12px',
               border: '1px solid rgba(136, 192, 208, 0.1)',
               fontSize: '13px',
-              color: '#8b949e',
+              color: '#64748b',
               lineHeight: 1.7
             }}>
-              <strong style={{ color: '#88c0d0' }}>Reading the fund J-curve:</strong> The
-              <span style={{ color: '#bf616a' }}> trough depth</span> reflects how much capital LPs must commit
+              <strong style={{ color: '#0d9488' }}>Reading the fund J-curve:</strong> The
+              <span style={{ color: '#dc2626' }}> trough depth</span> reflects how much capital LPs must commit
               before distributions begin—driven by stage focus and follow-on reserves.
               <span style={{ color: '#d08770' }}> Deployment pace</span> controls how quickly capital is called.
               Earlier-stage funds show deeper, wider troughs but higher potential TVPI.
               Growth funds offer shallower curves with faster DPI but compressed multiples.
-              The <span style={{ color: '#a3be8c' }}>recovery slope</span> depends on exit timing
+              The <span style={{ color: '#16a34a' }}>recovery slope</span> depends on exit timing
               and the power-law distribution of returns across the portfolio.
             </div>
           </div>
