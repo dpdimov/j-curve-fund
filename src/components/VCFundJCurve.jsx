@@ -335,8 +335,8 @@ const VCFundJCurve = () => {
 
         .preset-btn {
           padding: 14px 22px;
-          border: 1px solid rgba(139, 148, 158, 0.2);
-          background: rgba(22, 27, 34, 0.8);
+          border: 1px solid #e2e8f0;
+          background: #ffffff;
           color: #64748b;
           font-size: 13px;
           font-weight: 500;
@@ -345,12 +345,12 @@ const VCFundJCurve = () => {
           border-radius: 8px;
         }
         .preset-btn:hover {
-          background: rgba(48, 54, 61, 0.8);
-          border-color: rgba(139, 148, 158, 0.4);
+          background: #f1f5f9;
+          border-color: #cbd5e1;
           color: #1e293b;
         }
         .preset-btn.active {
-          background: linear-gradient(135deg, rgba(136, 192, 208, 0.12), rgba(163, 190, 140, 0.12));
+          background: linear-gradient(135deg, rgba(136, 192, 208, 0.15), rgba(163, 190, 140, 0.15));
           border-color: rgba(136, 192, 208, 0.5);
           color: #0d9488;
           box-shadow: 0 0 24px rgba(136, 192, 208, 0.12);
@@ -373,7 +373,7 @@ const VCFundJCurve = () => {
           width: 100%;
           height: 5px;
           -webkit-appearance: none;
-          background: rgba(139, 148, 158, 0.15);
+          background: #e2e8f0;
           border-radius: 3px;
           outline: none;
         }
@@ -392,8 +392,8 @@ const VCFundJCurve = () => {
         }
 
         .metric-card {
-          background: rgba(22, 27, 34, 0.6);
-          border: 1px solid rgba(139, 148, 158, 0.12);
+          background: #ffffff;
+          border: 1px solid #e2e8f0;
           border-radius: 10px;
           padding: 18px;
           text-align: center;
@@ -414,15 +414,15 @@ const VCFundJCurve = () => {
 
         .toggle-btn {
           padding: 10px 16px;
-          border: 1px solid rgba(139, 148, 158, 0.2);
-          background: transparent;
+          border: 1px solid #e2e8f0;
+          background: #ffffff;
           color: #64748b;
           font-size: 12px;
           cursor: pointer;
           transition: all 0.25s;
           border-radius: 6px;
         }
-        .toggle-btn:hover { background: rgba(48, 54, 61, 0.6); }
+        .toggle-btn:hover { background: #f1f5f9; }
         .toggle-btn.active {
           background: rgba(191, 97, 106, 0.15);
           border-color: rgba(191, 97, 106, 0.5);
@@ -431,8 +431,8 @@ const VCFundJCurve = () => {
 
         .comparison-select {
           padding: 10px 14px;
-          background: rgba(22, 27, 34, 0.8);
-          border: 1px solid rgba(139, 148, 158, 0.2);
+          background: #ffffff;
+          border: 1px solid #e2e8f0;
           color: #1e293b;
           font-size: 12px;
           border-radius: 6px;
@@ -717,10 +717,10 @@ const VCFundJCurve = () => {
 
             {/* SVG Chart */}
             <div className="chart-container" style={{
-              background: 'rgba(13, 17, 23, 0.6)',
+              background: '#ffffff',
               borderRadius: '14px',
               padding: '24px',
-              border: '1px solid rgba(139, 148, 158, 0.08)',
+              border: '1px solid #e2e8f0',
               marginBottom: '24px'
             }}>
               <svg viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="xMidYMid meet">
@@ -734,7 +734,7 @@ const VCFundJCurve = () => {
                       y1={y}
                       x2={width - padding.right}
                       y2={y}
-                      stroke="rgba(139, 148, 158, 0.06)"
+                      stroke="#e2e8f0"
                       strokeDasharray="4,6"
                     />
                   );
@@ -748,7 +748,7 @@ const VCFundJCurve = () => {
                     y1={padding.top}
                     x2={scaleX(year * 12)}
                     y2={height - padding.bottom}
-                    stroke="rgba(139, 148, 158, 0.06)"
+                    stroke="#e2e8f0"
                   />
                 ))}
 
@@ -758,7 +758,7 @@ const VCFundJCurve = () => {
                   y1={zeroLineY}
                   x2={width - padding.right}
                   y2={zeroLineY}
-                  stroke="rgba(139, 148, 158, 0.25)"
+                  stroke="#94a3b8"
                   strokeWidth="1"
                 />
 
@@ -842,11 +842,11 @@ const VCFundJCurve = () => {
                 {/* Legend */}
                 {showComparison && (
                   <g transform={`translate(${width - padding.right - 150}, ${padding.top + 10})`}>
-                    <rect x="-12" y="-10" width="160" height="54" fill="rgba(13, 17, 23, 0.8)" rx="6" />
+                    <rect x="-12" y="-10" width="160" height="54" fill="#f1f5f9" stroke="#e2e8f0" rx="6" />
                     <line x1="0" y1="8" x2="28" y2="8" stroke="url(#vcLineGradient)" strokeWidth="2" />
-                    <text x="38" y="12" fill="#64748b" fontSize="10">{presets[selectedPreset]?.name || 'Current'}</text>
+                    <text x="38" y="12" fill="#1e293b" fontSize="10">{presets[selectedPreset]?.name || 'Current'}</text>
                     <line x1="0" y1="30" x2="28" y2="30" stroke="#dc2626" strokeWidth="2" strokeDasharray="8,5" />
-                    <text x="38" y="34" fill="#64748b" fontSize="10">{presets[comparisonPreset]?.name}</text>
+                    <text x="38" y="34" fill="#1e293b" fontSize="10">{presets[comparisonPreset]?.name}</text>
                   </g>
                 )}
               </svg>
@@ -854,10 +854,10 @@ const VCFundJCurve = () => {
 
             {/* Yearly Cash Flows Bar Chart */}
             <div style={{
-              background: 'rgba(13, 17, 23, 0.6)',
+              background: '#ffffff',
               borderRadius: '14px',
               padding: '24px',
-              border: '1px solid rgba(139, 148, 158, 0.08)'
+              border: '1px solid #e2e8f0'
             }}>
               <h4 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: '#94a3b8', marginBottom: '20px', fontWeight: 500 }}>
                 Annual Cash Flows
